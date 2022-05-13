@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.02em;
+     font-weight: 100;
+    -webkit-font-smoothing: antialiased; 
+    margin: 0;
+	  padding: 0;
+}
+img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+ 
+.modal.vidro #icone 
+{
+    position: fixed;
+    top: -350px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(3,3,3,.8);
+    overflow: hidden;
+    opacity: 0.4;
+    box-shadow: 10px 10px 30px #000;
+}
+
+.back
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+}
+
+.modal 
+{
+    position: fixed;
+    width: 350px;
+    height: 480px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.vidro 
+{
+    background: rgba(132, 0, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.modal.vidro .login-box {
+    position: fixed;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 20px; 
+  }
+  
+.login-box .user-box {
+    position: relative;
+  }
+  
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background: transparent;
+  }
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #a200ff;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 60px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 10px
+  }
+  
+.login-box form a:hover {
+    background: #a200ff;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a200ff,
+                0 0 25px #a200ff,
+                0 0 50px #a200ff,
+                0 0 100px #a200ff;
+  }
+  
+.login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a200ff);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #a200ff);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #a200ff);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #a200ff);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+p
+  {
+    font-size: 30px;
+    margin-top: -12px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+.login-box .criar h4
+{
+  color: #fff;
+  font-weight: 400;
+  font-weight: 100;
+  font-size: 15px;
+}
+.criar a
+  {
+    color: #816ed8;
+    background: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+  }
+.criar a:hover {
+  color: #f700ff;
+}
+
+#cadastrar .active
+{
+  background-color: #a200ff;
+}
